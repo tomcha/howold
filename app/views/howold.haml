@@ -1,4 +1,6 @@
-%p="#{@basedate}現在、#{@agevalue}歳です。"
-%form
-  %input{type: 'button', value: '戻る', onClick: 'history.back()', class: 'btn btn-sm btn-default'}
+%div.container
+  %div.row
+    %p="#{@basedate}現在、#{@agevalue}歳です。"
+    %form.form-group
+      %input{type: 'button', value: '戻る', onClick: 'history.back()', class: 'btn btn-sm btn-default'}
 

@@ -1,10 +1,15 @@
-%form{action: '/howold', method: 'post'} 
-  %p
-    生年月日:
-    %input{type: 'text', name: 'birthday'}
-  %p
-    この時、何歳？
-    %input{type: 'text', name: 'basedate'}
-  %input{type: 'submit', value: '何歳？', class: 'btn btn-sm btn-default'}
-
-
+%div.container
+  %div.row
+    %div{class: 'col-md-3 col-xs-12'}
+      %form{action: '/howold', method: 'post'} 
+        %div.form-group
+          %p
+            生年月日
+          %input{type: 'datetime', name: 'birthday', class: 'form-control'}
+        %div.form-group
+          %p
+            この時、何歳？
+          %input{type: 'datetime', name: 'basedate', class: 'form-control', value: @today}
+        %div.form-group
+          %input{type: 'submit', value: '何歳？', class: 'btn btn-sm btn-default'}
+    %div{class: 'col-md-9 col-xs-0'}
