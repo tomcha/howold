@@ -3,13 +3,13 @@
     %div{class: 'col-md-3 col-xs-12'}
       %form{action: '/howold', method: 'post'} 
         %div.form-group
-          %p
+          %h2
             生年月日
-          %input{type: 'datetime', name: 'birthday', class: 'form-control'}
+          %input{type: 'datetime', name: 'birthday', class: 'form-control input-lg'}
         %div.form-group
-          %p
+          %h2
             この時、何歳？
-          %input{type: 'datetime', name: 'basedate', class: 'form-control', value: @today}
+          %input{type: 'datetime', name: 'basedate', class: 'form-control input-lg', value: @today}
         %div.form-group
-          %input{type: 'submit', value: '何歳？', class: 'btn btn-sm btn-default'}
+          %input{type: 'submit', value: '何歳？', class: 'btn btn-lg btn-default'}
     %div{class: 'col-md-9 col-xs-0'}
